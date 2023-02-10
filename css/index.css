@@ -4,6 +4,8 @@
 
 html {
     height: 100%;
+    /* background: #77ACA2; */
+    background: #468189;
 }
 
 body {
@@ -21,23 +23,27 @@ li {
 
 .leftSideBar {
     color:white;
-    width: 25%;
-    background: rgb(33, 32, 32);
+    width: 15%;
+    background: #031926;
+    /* max-width: 2000px; */
 }
 .profileImgTxt {
     text-align: center;
     margin-bottom: 24px;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .profileImg {
     padding: 30px;
     padding-bottom: 0px;
+    
 }
 
 
 #profileImg {
     justify-content: center;
     width: 100%;
+    max-width: 200px;
 }
 #sideName {
     font-size: 20px;
@@ -47,14 +53,56 @@ li {
 #sideLocation {
     font-size: 12px;
     margin-top: 0px;
+    margin-bottom: 90px;
     
 }
 
+.socials {
+    /* margin-top: 100px; */
+    width:100%;
+    margin-bottom: 20px;
+}
+#linkedin {
+    max-height: 50px;
+    width: auto;
+    margin-left: 20%;
+    
+}
+#github {
+    max-height: 50px;
+    width: auto;
+    margin-left: 20%;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 701px) {
+     #github {
+    margin-top: 20%;
+    /* margin-left: 18%; */
+    margin-left: 35%
+    }
+
+    #linkedin {
+        margin-left: 37%;
+    }
+}
+@media screen and (min-width: 993px) {
+    
+    #sideName {
+        font-size: 40px;
+    }
+    #sideLocation {
+        font-size: 20px;
+
+        
+    }
+    
+}
 
 /*Right Side of the Page INDEX.HTML*/
 .rightSidePage {
     margin-left: 25%;
-    background: rgb(89, 62, 97);
+    background: #468189;
     color: rgb(237, 234, 234);
     height: 100%;
 }
@@ -63,25 +111,27 @@ h1 {
     font-size: 75px;
     padding-left: 45px;
     margin-bottom: 0;
+    font-family: 'Fjalla One', sans-serif;
     
 }
 .traits p {
-    padding-left: 55px;
+    padding-left: 60px;
+    font-size: 30px;
     margin: 0;
+    color: #9DBEBB;
 }
 
-#mainName {
-    font-size: 55px
-}
 #headingTxt {
     margin-top: 70px;
+    font-family: 'Fjalla One', sans-serif;
 }
 #spotlightHead {
     text-align: center;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .spotlightContainer {
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -95,13 +145,17 @@ h1 {
     width: 100%;
 }
 #spotTxt1 {
-    background-color: purple;
+    background-image: url("/images/Landscaper\ Project.png");
+    background-size: cover;
 }
 #spotTxt2 {
-    background-color: aquamarine;
+    background-image: url("/images/Space-Battle.jpg");
+    background-size: cover;
 }
 #spotTxt3 {
-    background-color: pink;
+    background-image: url("/images/LOTR.jpeg");
+    background-size: cover;
 }
+
 
 
