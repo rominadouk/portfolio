@@ -4,32 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/aboutMe_Resume.css"/>
+    <!--W3.css-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <title>About Me + Resume</title>
 </head>
-<body>
-    <!--Left Side Bar Container-->
-    <div class="leftSideBar">
-        <img id="profileImg">
-        <p class="profileImgTxt">Romina Douk</p>
-        <p class="profileImgTxt">Sacramento, California</p>
-        <nav>
-            <ul class="mainNav"></ul>
-            <li>Home</li>
-            <li>Bio + Resume</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            </nav>
-            <img id='LinkedIn' class="social">
-            <img id='GitHub' class="social">
+<body class="w3-row">
+   <!--Left Side Bar Container-->
+<div class="leftSideBar w3-row w3-sidebar w3-bar-block w3-main w3-display-container" style="width: 25%";>
+    <div class="profileImg">
+        <img id="profileImg" class="w3-image w3-hide-large" src="/images/Romina Portrait.png">
     </div>
+    <div class="profileImgTxt">
+    <p id='sideName'>Romina Douk</p>
+    <p id='sideLocation'>Sacramento, California</p>
+    </div>
+    <nav id="leftNav" class="">
+        <a href="/index.html" class="w3-bar-item w3-button w3-border-bottom"> HOME</a>
+        <a href="/aboutMe_Resume.html" class="w3-bar-item w3-button w3-border-bottom"> BIO + RESUME</a>
+        <a href="/projects.html" class="w3-bar-item w3-button w3-border-bottom"> PROJECTS</a>
+        <a href="/contact.html" class="w3-bar-item w3-button w3-border-bottom"> CONTACT</a>
+    </nav>
+        <div class="socials w3-display-bottommiddle">
+            <div class="w3-row">
+                <a href="https://www.linkedin.com/in/rominadouk/">
+                    <img id='linkedin' class="social w3-half" src="/images/LI-In-Bug.png">
+                </a>
+                <a href="https://github.com/rominadouk">
+                    <img id='github' class="social w3-half" src="/images/github-mark-white.png">
+                </a>
+            </div>
+               
+            
+        </div>
+        </div>
 
-    <h1>Romina Douk</h1>
-    <h2>Bio + Resume</h2>
-    <div id="containimages"> 
-        <div id="smImg1" class="aboutImg"></div>
-        <div id="bigImg" class="aboutImg"></div>
-        <div id="smImg2" class="aboutImg"></div>
+<div class="rightSidePage rightSideProjectsPg rightSideBioPg w3-row w3-cell-middle" style="margin-left:25%">
+<!--EVERYTHING BELOW IS THE RIGHT SIDE OF THE PAGE-->
+    <h1 id="nameBio">Romina Douk</h1>
+    <h2 id="bioResume">Bio + Resume</h2>
+    <div id="containimages" class="container"> 
+        <div class="row">
+        <div id="smImg1" class="aboutImg col"></div>
+        <div id="bigImg" class="aboutImg col"></div>
+        <div id="smImg2" class="aboutImg col"></div>
+        </div>
     </div>
     <!--About Me Text below Photos-->
     <div>
@@ -66,7 +92,7 @@
     </label>
 
 
-
+</div>
 
 
 </body>
