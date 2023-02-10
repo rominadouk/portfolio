@@ -4,57 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<link rel="stylesheet" type="text/css" href="/css/index.css"/>
 <!--W3.css-->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="/css/index.css"/>
     <title>Romina Douk - Portfolio</title>
 </head>
-<body>
+<body class="w3-row">
 <!--Left Side Bar Container-->
-    <div class="leftSideBar">
-        <img id="profileImg" src="/images/Romina.jpg">
+    <div class="leftSideBar w3-sidebar w3-bar-block">
+        <div class="profileImg">
+            <img id="profileImg" class="w3-image" src="/images/Romina Portrait.png">
+        </div>
         <div class="profileImgTxt">
         <p id='sideName'>Romina Douk</p>
         <p id='sideLocation'>Sacramento, California</p>
         </div>
-        <nav id="leftNav">
-            <ul class="mainNav"></ul>
-            <li>Home</li>
-            <li>Bio + Resume</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            </nav>
+        <nav id="leftNav" class="">
+            <a href="/index.html" class="w3-bar-item w3-button w3-border-bottom"> Home</a>
+            <a href="/aboutMe_Resume.html" class="w3-bar-item w3-button w3-border-bottom"> Bio + Resume</a>
+            <a href="/projects.html" class="w3-bar-item w3-button w3-border-bottom"> Projects</a>
+            <a href="/contact.html" class="w3-bar-item w3-button w3-border-bottom"> Contact</a>
+        </nav>
             <img id='LinkedIn' class="social">
             <img id='GitHub' class="social">
     </div>
+
+<div class="rightSidePage w3-row-padding w3-cell-middle">
     
-<div class="rightSidePage">
+
     <!--Toggle Switch-->
     <label class="switch">
         <input type="checkbox">
         <span class="slider round"></span>
       </label>
-    
-    <h1>Software Engineer <span id="mainName">Romina Douk</span></h1>
+
+    <div id="headingTxt">
+        <h1>Software Engineer</h1>
+    <div class="traits">
+        <p>#1 Ziping Yin in California</p>
+        <p>Peaked Plat 1 Valorant</p>
+        <p>Nova's Mommy</p>
+    </div>
+    </div>
+
+
 
     <!--Spotlight Section-->
-    <h2>Spotlight</h2>
-    <div class='spotlightContainer'>
-        <div id='homeProject1' class='spotImg' alt="project1"> 
+
+    <div class='spotlightContainer w3-row'>
+        <h2 id="spotlightHead">Spotlight</h2>
+
+        <div id='homeProject1' class='spotImg w3-third' alt="project1"> 
+            <a href="/projects.html">
             <div id="spotTxt1" class="spotTxt">Landscaper</div>
+            </a>
         </div>
-
-        <div id='homeProject2' class='spotImg' alt="project2"> 
+        
+        <div id='homeProject2' class='spotImg w3-third' alt="project2"> 
+            <a href="/projects.html">
             <div id="spotTxt2" class="spotTxt">SpaceBattle</div>
+            </a>
         </div>
 
-        <div id='homeProject3' class='spotImg' alt="project3"> 
+        <div id='homeProject3' class='spotImg w3-third' alt="project3"> 
+            <a href="/projects.html">
             <div id="spotTxt3" class="spotTxt">Lord of The Rings</div>
+            </a>
+            
         </div>
     </div>
 </div>
-
+</div>
 
 </body>
 </html>
