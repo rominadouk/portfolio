@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid gold;
-}
+} */
 
 html {
     height: 100%;
@@ -108,7 +108,7 @@ STYLING FOR INDEX.HTML PG BELOW
 .rightSidePage {
     margin-left: 25%;
     /* background: #468189; */
-    background: #468189;
+    background: #0b2d41;
     color: rgb(237, 234, 234);
     height: 100%;
 }
@@ -284,7 +284,61 @@ STYLING FOR BIO + RESUME PAGE BELOW
     margin-top: 43px;
     text-align: center;
     font-size: 60px;
+    font-family: 'Fjalla One', sans-serif;
 }
 #bioResume {
     text-align: center;
+}
+
+#aboutTxt {
+    margin: 0 60px;
+}
+
+/* 
+///////////////////////////////////
+STYLING FOR CONTACT PAGE BELOW 
+///////////////////////////////////
+*/
+
+.rightSideContactPg {
+    height: 100%;
+    font-family: 'Fjalla One', sans-serif;
+}
+#contactHead {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 43px;
+    text-align: center;
+    padding:0;
+    /* margin-bottom: 10px */
+}
+#contactInfoContainer {
+    text-align: center;
+    /* margin: 200px 100px; */
+    background-color: #031926;
+}
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+input {
+    display: block;
+}
+textarea {
+    display: block;
+    width: 100%;
+}
+#msgID {
+    /* margin-left: 20px; */
+}
+.w-100 {
+    width: 100%;
+}
+.m-center {
+    margin: 0 auto;
+}
+
+#contactSubmit {
+    background-color: cyan;
 }

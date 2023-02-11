@@ -4,46 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/contact.css"/>
+    <!--W3.css-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <title>Contact Me</title>
 </head>
-<body>
-    <!--Left Side Bar Container-->
-    <div class="leftSideBar">
-        <img id="profileImg">
-        <p class="profileImgTxt">Romina Douk</p>
-        <p class="profileImgTxt">Sacramento, California</p>
-        <nav>
-            <ul class="mainNav"></ul>
-            <li>Home</li>
-            <li>Bio + Resume</li>
-            <li>Projects</li>
-            <li>Contact</li>
-            </nav>
-            <img id='LinkedIn' class="social">
-            <img id='GitHub' class="social">
+<body class="w3-row">
+ <!--Left Side Bar Container-->
+ <div class="leftSideBar w3-row w3-sidebar w3-bar-block w3-main w3-display-container" style="width: 25%";>
+    <div class="profileImg">
+        <img id="profileImg" class="w3-image w3-hide-large" src="/images/Romina Portrait.png">
     </div>
-
+    <div class="profileImgTxt">
+    <p id='sideName'>Romina Douk</p>
+    <p id='sideLocation'>Sacramento, California</p>
+    </div>
+    <nav id="leftNav" class="">
+        <a href="/index.html" class="w3-bar-item w3-button w3-border-bottom"> HOME</a>
+        <a href="/aboutMe_Resume.html" class="w3-bar-item w3-button w3-border-bottom"> BIO + RESUME</a>
+        <a href="/projects.html" class="w3-bar-item w3-button w3-border-bottom"> PROJECTS</a>
+        <a href="/contact.html" class="w3-bar-item w3-button w3-border-bottom"> CONTACT</a>
+    </nav>
+        <div class="socials w3-display-bottommiddle">
+            <div class="w3-row">
+                <a href="https://www.linkedin.com/in/rominadouk/">
+                    <img id='linkedin' class="social w3-half" src="/images/LI-In-Bug.png">
+                </a>
+                <a href="https://github.com/rominadouk">
+                    <img id='github' class="social w3-half" src="/images/github-mark-white.png">
+                </a>
+            </div>
+               
+            
+        </div>
+        </div>
+<div class="rightSidePage rightSideProjectsPg rightSideBioPg rightSideContactPg w3-row w3-cell-middle" style="margin-left:25%">
 <!--Toggle Switch-->
     <label class="switch">
         <input type="checkbox">
         <span class="slider round"></span>
     </label>
+    <div class="p-5">
+        <div id="contactInfoContainer" class="row pb-4">
+            <h1 id="contactHead" class="col-12 my-4">Contact Me</h1>
 
-<h1 id="contactHead">Contact Me</h1>
-<form>
-    <label>Name
-    <input type="text" id="name">
-    </label>
+            <form class="row">
+            <!-- <div id="nameEmail" class="row"> -->
+                    <div id="nameLabel" class="col-sm-6">
+                        <label>Name
+                        <input type="text" id="name" class="w-100">
+                        </label>
+                    </div>
+                    <div id="emailLabel" class="col-sm-6">
+                        <label>Email
+                        <input type="text" id="email" class="w-100">
+                        </label>
+                    </div>
+                <!-- </div> -->
 
-    <label>Email
-    <input type="text" id="email">
-    </label>
-
-    <label>Password
-    <input type="text" id="message">
-    </label>
-</form>
-
+            <!-- <div id="messageContainer" class="row"> -->
+                <div id="messageLabel" class="col-12">
+                    <label id="msgID">Message
+                    <textarea type="textarea" id="message"></textarea>
+                    </label>
+                </div>
+            <!-- </div> -->
+            <button type="submit" id="contactSubmit" class="col-sm-3 col-lg-2 m-center">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>
