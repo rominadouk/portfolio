@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--W3.css-->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--BOOTSTRAP-->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <!--jQuery-->
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script src="./javascript/index.js"></script>
@@ -23,8 +24,17 @@
     <!--EVERYTHING BELOW IS TOPNAV BAR + HAMBURGER MENU-->
 <header>
     <nav class="nav">
-        <h3 id="homeName">Romina Douk</h3>
+        <div class="nameLink">
+            <h3 id="homeName">Romina Douk</h3>
+            <a href="https://github.com/rominadouk">
+            <img id="github" src="/images/GitHub Icon Black.png">
+            </a>
+            <a href="https://www.linkedin.com/in/rominadouk/">
+            <img id="linkedin" src="/images/LI-In-Bug.png">
+            </a>
+        </div>
 
+    
         <div class="hamburgerMenu">
             <span class="line"></span>
             <span class="line"></span>
@@ -40,7 +50,7 @@
     </nav>
 </header>
 
-<div class="rightSidePage w3-row">
+<div class="rightSidePage">
     
     <!-- Toggle Switch
     <label class="switch">
@@ -60,29 +70,26 @@
 
 
     <!--Spotlight Section-->
+    <h2 id="spotlightHead">Spotlight</h2>
+    
+    <div class='spotlightContainer container-fluid'>
+        <div class="spotlightContain2 row">
+            <div id="spotImg1ID" class="spotImg1 spotlightImg col-sm-2 offset-sm-2">
+            </div>
 
-    <div class='spotlightContainer w3-row'>
-        <h2 id="spotlightHead">Spotlight</h2>
+            <div id="spotImg2ID" class="spotImg2 spotlightImg col-sm-2 offset-sm-1">
+            </div>
 
-        <div id='homeProject1' class='spotImg w3-third' alt="project1"> 
-            <a href="/projects.html">
-            <div id="spotTxt1" class="spotTxt"></div>
-            </a>
-        </div>
-        
-        <div id='homeProject2' class='spotImg w3-third' alt="project2"> 
-            <a href="/projects.html">
-            <div id="spotTxt2" class="spotTxt">SpaceBattle</div>
-            </a>
+            <div id="spotImg3ID" class="spotImg3 spotlightImg col-sm-2 offset-sm-1">
+            </div>
+
         </div>
 
-        <div id='homeProject3' class='spotImg w3-third' alt="project3"> 
-            <a href="/projects.html">
-            <div id="spotTxt3" class="spotTxt">Lord of The Rings</div>
-            </a>
-        </div>
     </div>
-</div>
+
+
+
+
 </div>
 </body>
 </html>

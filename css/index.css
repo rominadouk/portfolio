@@ -3,7 +3,7 @@
 } */
 
 html {
-    height: 100%;
+     height: 100%;
 }
 
 body {
@@ -19,6 +19,7 @@ LEFT SIDE BAR + NAV STYLING BELOW
     font-family: 'Fjalla One', sans-serif;
     padding-left: 20px;
     font-size: 30px;
+    margin: .5rem;
 }
 .nav {
     display: flex;
@@ -44,6 +45,7 @@ LEFT SIDE BAR + NAV STYLING BELOW
     top: 5rem;
     left: 18px;
     background-color: lightblue;
+    font-family: verdana, sans-serif;
 }
 
 .nav__link a {
@@ -60,6 +62,24 @@ LEFT SIDE BAR + NAV STYLING BELOW
 .hide {
     display: none;
 }
+
+#github {
+    height: 35px;
+    margin-top: 6px;
+    margin-left: 20px;
+    display: inline;
+}
+#linkedin {
+    height: 35px;
+    margin-top: 7px;
+    margin-left: 20px;
+    display: inline;
+
+}
+.nameLink {
+    display: flex;
+}
+
 
 @media screen and (min-width: 600px) {
     .nav__link {
@@ -86,10 +106,11 @@ STYLING FOR INDEX.HTML PG BELOW
 ///////////////////////////////////
 */
 .rightSidePage {
-    background-image: url('/images/shubham-dhage-MzpkPcVNA6g-unsplash.jpg');
+    background-image: url('/images/adjusted2.jpg');
     background-size: cover;
     color: rgb(237, 234, 234);
     height: 100%;
+    width: auto;
 }
 
 #positionTitle { 
@@ -107,40 +128,34 @@ STYLING FOR INDEX.HTML PG BELOW
 }
 
 #headingTxt {
-    margin-top: 70px;
+    padding-top: 65px;
     font-family: 'Fjalla One', sans-serif;
 }
 #spotlightHead {
+    margin-top: 100px;
     text-align: center;
     font-family: 'Fjalla One', sans-serif;
 }
 
-.spotlightContainer {
-    margin-top: 100px;
-    text-align: center;
+.spotlightImg {
+    height: 220px;
+
 }
 
-.spotImg {
-    height: 12em;
-    padding: 0 20px;
-    
-}
-.spotTxt {
-    height: 100%;
-    width: 100%;
-}
-#spotTxt1 {
-    background-image: url("/images/Landscaper\ Project.png");
+#spotImg1ID {
+    background-image: url('/images/Landscaper\ Project.png');
     background-size: cover;
 }
-#spotTxt2 {
-    background-image: url("/images/Space-Battle.jpg");
+.spotImg2 {
+    background-image: url('/images/Space-Battle.jpg');
     background-size: cover;
 }
-#spotTxt3 {
-    background-image: url("/images/LOTR.jpeg");
+.spotImg3 {
+    background-image: url('/images/LOTR.jpeg');
     background-size: cover;
 }
+
+
 
 /* 
 ///////////////////////////////////
@@ -152,10 +167,14 @@ STYLING FOR PROJECTS PAGE BELOW
     height: auto;
     width: auto;
 }
+
 #projectsTitle {
     padding-left: 45px;
     font-family: 'Fjalla One', sans-serif;
     font-size: 60px;
+    margin-top: 43px;
+    text-align: center;
+
 }
 #projectContainer {
     margin-bottom: 30px;
@@ -231,8 +250,7 @@ STYLING FOR BIO + RESUME PAGE BELOW
 */
 
 .rightSideBioPg {
- height: auto;
- width: auto;
+ height: 100%
 }
 
 #containimages {
