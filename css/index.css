@@ -163,17 +163,20 @@ STYLING FOR PROJECTS PAGE BELOW
 ///////////////////////////////////
 */
 
-.rightSideProjectsPg {
-    height: auto;
-    width: auto;
+.projectsPage{
+    background-image: url('/images/adjusted2.jpg');
+    background-size: cover;
+    color: rgb(237, 234, 234);
+    
 }
+
 
 #projectsTitle {
     padding-left: 45px;
     font-family: 'Fjalla One', sans-serif;
     font-size: 60px;
-    margin-top: 43px;
     text-align: center;
+    padding-top: 45px;
 
 }
 #projectContainer {
@@ -188,9 +191,14 @@ STYLING FOR PROJECTS PAGE BELOW
     background-size: cover;
     margin: 40px;
 }
+#item1 p {
+    margin-top: 10px;
+    background: grey;
+}
+
 
 #item1Txt {
-    padding-left: 150px;
+    padding-left: 120px;
 
 }
 
@@ -199,9 +207,13 @@ STYLING FOR PROJECTS PAGE BELOW
     background-size: cover;
     margin: 40px;
 }
-#item2Txt {
-    padding-left: 150px;
+#item2 p {
+    margin-top: 10px;
+    background:grey
+}
 
+#item2Txt {
+    padding-left: 120px;
 }
 
 #item3 {
@@ -209,8 +221,13 @@ STYLING FOR PROJECTS PAGE BELOW
     background:black;
     margin: 40px;
 }
+
+#item3 p {
+    margin-top: -10px;
+    background: grey;
+}
 #item3Txt {
-    padding-left: 150px;
+    padding-left: 120px;
 
 }
 
@@ -221,8 +238,13 @@ STYLING FOR PROJECTS PAGE BELOW
     background-size: cover;
     margin: 30px 0 0 0;
 }
+#item4 p {
+    background: grey;
+    margin-top: -10px;
+}
+
 #item4Txt {
-    padding-left: 150px;
+    padding-left: 120px;
 
 }
 
@@ -249,8 +271,10 @@ STYLING FOR BIO + RESUME PAGE BELOW
 ///////////////////////////////////
 */
 
-.rightSideBioPg {
- height: 100%
+.bioPage{
+    background-image: url('/images/adjusted2.jpg');
+    background-size: cover;
+    color: rgb(237, 234, 234);
 }
 
 #containimages {
@@ -266,6 +290,8 @@ STYLING FOR BIO + RESUME PAGE BELOW
 
 #bigImg {
     height: 300px;
+    background-image: url('/images/rominaBio.jpeg');
+    background-size: cover;
 
 
 }
@@ -297,9 +323,11 @@ STYLING FOR CONTACT PAGE BELOW
 ///////////////////////////////////
 */
 
-.rightSideContactPg {
+.contactPage {
+    background-image: url('/images/adjusted2.jpg');
+    background-size: cover;
+    color: rgb(237, 234, 234);
     height: 100%;
-    font-family: 'Fjalla One', sans-serif;
 }
 #contactHead {
     font-family: 'Fjalla One', sans-serif;
