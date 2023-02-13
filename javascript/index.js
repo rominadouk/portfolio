@@ -5,13 +5,25 @@ $(() => {
     $('.hamburgerMenu').on('click', function () {
         $('.nav__link').toggleClass('hide')
     })
-
+    //Hover Events
     document.getElementById('spotImg1ID').addEventListener('mouseover', makeOverlay1, false)
     document.getElementById('spotImg1ID').addEventListener('mouseout', removeOverlay1)
     document.getElementById('spotImg2ID').addEventListener('mouseover', makeOverlay2, false)
     document.getElementById('spotImg2ID').addEventListener('mouseout', removeOverlay2)
     document.getElementById('spotImg3ID').addEventListener('mouseover', makeOverlay3, false)
     document.getElementById('spotImg3ID').addEventListener('mouseout', removeOverlay3)
+
+    //Cannot Remove the event. Decided not to put it in mobile.
+    //Click events for mobile
+    // const mediaQuery = window.matchMedia('(max-width: 690px')
+    // const clickEvents = (e) => {
+    //     if(e.matches) {
+    //     document.getElementById('spotImg1ID').addEventListener('click', makeOverlay1)
+    // }
+    //     }
+    //     mediaQuery.addEventListener('click', clickEvents)
+
+
 
 });
 
@@ -34,6 +46,9 @@ const removeOverlay3 = () => {
     const overlay3 = document.getElementById('overlay3')
     spotImg3.removeChild(overlay3)
 }
+
+
+
 
 
 //make a div give it an ID of "overlay1" and class of 'overlays' appedn it to the div of the img ex:sptImg1

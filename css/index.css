@@ -16,7 +16,7 @@ LEFT SIDE BAR + NAV STYLING BELOW
 */
 
 #homeName {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-left: 20px;
     font-size: 30px;
     margin: .5rem;
@@ -45,7 +45,7 @@ LEFT SIDE BAR + NAV STYLING BELOW
     top: 5rem;
     left: 18px;
     background-color: lightblue;
-    font-family: verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav__link a {
@@ -54,6 +54,7 @@ LEFT SIDE BAR + NAV STYLING BELOW
     padding: 10px 0;
     text-decoration: none;
     color: black;
+    font-size: 16px;
 }
 
 .nav__link a:hover {
@@ -100,41 +101,81 @@ LEFT SIDE BAR + NAV STYLING BELOW
     }
 }
 
+@media screen and (max-width:600px) {
+    #github {
+        height: 20px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    #linkedin {
+        height: 20px;
+        margin-top: 15px;
+    }
+
+
+}
 /* 
 ///////////////////////////////////
 STYLING FOR INDEX.HTML PG BELOW
 ///////////////////////////////////
 */
+
+h1 {
+    font-weight: 700;
+}
 .rightSidePage {
-    background-image: url('/images/adjusted2.jpg');
+    background-image: url('/images/background\ lines.jpg');
     background-size: cover;
     color: rgb(237, 234, 234);
-    height: 100%;
     width: auto;
+}
+@media screen and (min-width:767px) {
+    .rightSidePage {
+        height: 100%;
+    }
 }
 
 #positionTitle { 
     font-size: 75px;
     padding-left: 45px;
     margin-bottom: 0;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
 }
+
+
 .traits p {
     padding-left: 60px;
-    font-size: 30px;
+    font-size: 40px;
     margin: 0;
     color: #9DBEBB;
 }
 
+
 #headingTxt {
     padding-top: 65px;
-    font-family: 'Fjalla One', sans-serif;
+    padding-left: 60px;
+    font-family: 'Roboto', sans-serif;
 }
+/*Media Query*/
+@media screen and (max-width:767px) {
+    #positionTitle {
+        font-size: 60px;
+
+    }
+    .traits p {
+        font-size: 25px;
+
+    }
+    #headingTxt {
+        padding-left: 15px;
+    }
+}
+
 #spotlightHead {
-    margin-top: 100px;
+    margin-top: 170px;
     text-align: center;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .spotlightImg {
@@ -143,19 +184,20 @@ STYLING FOR INDEX.HTML PG BELOW
 }
 
 #spotImg1ID {
-    background-image: url('/images/Landscaper\ Project.png');
+    background-image: url('/images/127.0.0.1_5501_browserGame.html.png');
     background-size: cover;
+    background-position: center;
 }
 .spotImg2 {
     background-image: url('/images/Space-Battle.jpg');
     background-size: cover;
+    background-position: center;
 }
 .spotImg3 {
     background-image: url('/images/LOTR.jpeg');
     background-size: cover;
+    background-position: center;
 }
-
-
 
 /* 
 ///////////////////////////////////
@@ -164,16 +206,20 @@ STYLING FOR PROJECTS PAGE BELOW
 */
 
 .projectsPage{
-    background-image: url('/images/adjusted2.jpg');
+    background-image: url('/images/background\ lines.jpg');
     background-size: cover;
     color: rgb(237, 234, 234);
     
 }
-
+@media screen and (min-height:767px) {
+    .projectsPage {
+        height: 100%;
+    }
+}
 
 #projectsTitle {
     padding-left: 45px;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 60px;
     text-align: center;
     padding-top: 45px;
@@ -206,6 +252,7 @@ STYLING FOR PROJECTS PAGE BELOW
     background-image: url('/images/Space-Battle.jpg');
     background-size: cover;
     margin: 40px;
+    height: 200px;
 }
 #item2 p {
     margin-top: 10px;
@@ -220,6 +267,7 @@ STYLING FOR PROJECTS PAGE BELOW
     padding: 20px;
     background:black;
     margin: 40px;
+    height: 200px;
 }
 
 #item3 p {
@@ -272,9 +320,14 @@ STYLING FOR BIO + RESUME PAGE BELOW
 */
 
 .bioPage{
-    background-image: url('/images/adjusted2.jpg');
+    background-image: url('/images/background\ lines.jpg');
     background-size: cover;
     color: rgb(237, 234, 234);
+}
+@media screen and (min-height:767px) {
+    .bioPage {
+        /* height: 100%; */
+    }
 }
 
 #containimages {
@@ -307,7 +360,7 @@ STYLING FOR BIO + RESUME PAGE BELOW
     margin-top: 43px;
     text-align: center;
     font-size: 60px;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 #bioResume {
     text-align: center;
@@ -316,7 +369,25 @@ STYLING FOR BIO + RESUME PAGE BELOW
 #aboutTxt {
     margin: 0 60px;
 }
-
+#skillsContainer {
+    border-right-color: white;
+    border-width: 1px;
+    border-right: solid;
+}
+#experienceContainer {
+    border-top: solid;
+    border-width: 1px;
+    margin-left: 150px;
+}
+#experience {
+    margin-top: 25px;
+}
+@media screen and (max-width: 768px) {
+    #experienceContainer {
+        margin: auto;
+    };
+    
+}
 /* 
 ///////////////////////////////////
 STYLING FOR CONTACT PAGE BELOW 
@@ -324,22 +395,20 @@ STYLING FOR CONTACT PAGE BELOW
 */
 
 .contactPage {
-    background-image: url('/images/adjusted2.jpg');
+    background-image: url('/images/background\ lines.jpg');
     background-size: cover;
     color: rgb(237, 234, 234);
     height: 100%;
 }
 #contactHead {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 43px;
     text-align: center;
     padding:0;
-    /* margin-bottom: 10px */
 }
 #contactInfoContainer {
     text-align: center;
-    /* margin: 200px 100px; */
-    background-color: #031926;
+    background-color: #000000;
 }
 label {
     display: block;
@@ -354,9 +423,7 @@ textarea {
     display: block;
     width: 100%;
 }
-#msgID {
-    /* margin-left: 20px; */
-}
+
 .w-100 {
     width: 100%;
 }
@@ -365,5 +432,7 @@ textarea {
 }
 
 #contactSubmit {
-    background-color: cyan;
+    color: white;
+    background-color: rgb(145, 143, 199);
 }
+
