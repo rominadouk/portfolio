@@ -315,17 +315,7 @@ STYLING FOR PROJECTS PAGE BELOW
 }
 
 
-
-
 /* For The Main Showcased Item */
-
-.showcasedProject {
-    height: 300px;
-    margin-top: 10px;
-    background-image: url('/images/LOTR.jpeg');
-    background-size: cover;
-    margin: 30px 0 0 0;
-}
 
 /* 
 ///////////////////////////////////
