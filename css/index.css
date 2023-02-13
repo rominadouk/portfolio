@@ -211,7 +211,8 @@ STYLING FOR PROJECTS PAGE BELOW
     color: rgb(237, 234, 234);
     
 }
-@media screen and (min-height:767px) {
+/*EDIT THIS QUERY!!!!!!!*/
+@media screen and (min-height:835px) {
     .projectsPage {
         height: 100%;
     }
@@ -235,11 +236,12 @@ STYLING FOR PROJECTS PAGE BELOW
     height: 200px;
     background-image: url('/images/Landscaper\ Project.png');
     background-size: cover;
+    background-position: center;
     margin: 40px;
 }
 #item1 p {
     margin-top: 10px;
-    background: grey;
+    background: rgb(0, 0, 0);
 }
 
 
@@ -251,12 +253,13 @@ STYLING FOR PROJECTS PAGE BELOW
 #item2{
     background-image: url('/images/Space-Battle.jpg');
     background-size: cover;
+    background-position: center;
     margin: 40px;
     height: 200px;
 }
 #item2 p {
     margin-top: 10px;
-    background:grey
+    background:rgb(0, 0, 0)
 }
 
 #item2Txt {
@@ -272,7 +275,7 @@ STYLING FOR PROJECTS PAGE BELOW
 
 #item3 p {
     margin-top: -10px;
-    background: grey;
+    background: rgb(0, 0, 0);
 }
 #item3Txt {
     padding-left: 120px;
@@ -284,10 +287,11 @@ STYLING FOR PROJECTS PAGE BELOW
     margin-top: 10px;
     background-image: url('/images/LOTR.jpeg');
     background-size: cover;
+    background-position: center;
     margin: 30px 0 0 0;
 }
 #item4 p {
-    background: grey;
+    background: rgb(0, 0, 0);
     margin-top: -10px;
 }
 
@@ -303,6 +307,16 @@ STYLING FOR PROJECTS PAGE BELOW
 .languageUsed {
     font-size: 20px;
 }
+@media screen and (max-width:767px) {
+
+    #item1Txt, #item2Txt, #item3Txt, #item4Txt {
+        padding-left: 25px;
+    }
+}
+
+
+
+
 /* For The Main Showcased Item */
 
 .showcasedProject {
@@ -323,11 +337,6 @@ STYLING FOR BIO + RESUME PAGE BELOW
     background-image: url('/images/background\ lines.jpg');
     background-size: cover;
     color: rgb(237, 234, 234);
-}
-@media screen and (min-height:767px) {
-    .bioPage {
-        /* height: 100%; */
-    }
 }
 
 #containimages {
@@ -388,6 +397,8 @@ STYLING FOR BIO + RESUME PAGE BELOW
     };
     
 }
+
+
 /* 
 ///////////////////////////////////
 STYLING FOR CONTACT PAGE BELOW 
